@@ -1,4 +1,6 @@
-# 23g/cdn-helper-js
+# @23g/cdn-helper
+[![build_status](https://api.travis-ci.org/23G/cdn-helper-js.svg?branch=master)](https://travis-ci.org/23G/cdn-helper-js)
+
 CDN helper
 
 - [Installation](#installation)
