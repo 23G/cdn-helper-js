@@ -1,0 +1,22 @@
+{
+  "name": "cdn-helper",
+  "version": "0.0.1",
+  "description": "CDN Helper for internal usage",
+  "main": "cdn.js",
+  "scripts": {
+    "test": "./node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/23G/cdn-helper-js.git"
+  },
+  "author": "23G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/23G/cdn-helper-js/issues"
+  },
+  "homepage": "https://github.com/23G/cdn-helper-js#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
