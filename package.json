@@ -1,5 +1,5 @@
 {
-  "name": "cdn-helper",
+  "name": "@23g/cdn-helper",
   "version": "0.0.1",
   "description": "CDN Helper for internal usage",
   "main": "cdn.js",
