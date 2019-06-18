@@ -8,11 +8,11 @@ CDN helper
 
 First install the package in your project.
 
-`npm install 23g/cdn-helper`
+`npm install @23g/cdn-helper`
 
 or
 
-`yarn install 23g/cdn-helper`
+`yarn install @23g/cdn-helper`
 
 
 After installing make sure in your environment CDN_CDN_IMAGE_URL or MIX_CDN_IMAGE_URL (with laravel mix projects) is set with the url to the CDN.
