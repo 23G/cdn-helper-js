@@ -23,9 +23,9 @@ Within our project you can use the cdn() helper function which accepts 3 paramet
 
 ```javascript
 
-module.exports = (path, dimensions = null, mode = 'crop') => {
-    ...
-}
+import cdn from 'cdn-helper';
+
+cdn('/yoda.jpeg', '200x200', 'crop');
 
 ```
 ## Testing
