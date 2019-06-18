@@ -16,3 +16,11 @@ test('returns_url_with_dimensions', () => {
 test('returns_url_with_dimensions', () => {
     expect(cdn('/yoda.jpeg', '200x200')).toBe(cdnUrl + '/size:200x200,mode:crop/yoda.jpeg');
 });
+
+test('expects_error', () => {
+    process.env.CDN_URL = null;
+
+    expect(() => {
+        cdn('/yoda.jpeg', '200x200');
+    }).toThrow("MIX_CDN_URL or CDN_URL not available in project environment");
+});
