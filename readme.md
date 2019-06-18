@@ -15,7 +15,7 @@ or
 `yarn install 23g/cdn-helper`
 
 
-After installing make sure in your environment CDN_URL or MIX_CDN_URL (with laravel mix projects) is set with the url to the CDN.
+After installing make sure in your environment CDN_CDN_IMAGE_URL or MIX_CDN_IMAGE_URL (with laravel mix projects) is set with the url to the CDN.
 
 ## Usage
 
