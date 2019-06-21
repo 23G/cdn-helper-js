@@ -29,6 +29,10 @@ import cdn from 'cdn-helper';
 
 cdn('/yoda.jpeg', '200x200', 'crop');
 
+// resize options
+cdn('/yoda.jpeg', 'w200');
+cdn('/yoda.jpeg', 'h200');
+
 ```
 ## Testing
 
