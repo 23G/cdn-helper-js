@@ -29,7 +29,7 @@ import cdn from 'cdn-helper';
 
 /**
  * {String} path
- * {String} dimensions | (height)x(width), w(width), h(height)
+ * {String} dimensions | (width)x(height), w(width), h(height)
  * {String} mode | crop is default, can be left empty
  **/
 cdn('/yoda.jpeg', '200x200', 'crop');
@@ -42,6 +42,6 @@ The possibel resize options passed along in the "dimensions" param are as follow
 
 |Value|Action|
 |---|---|
-|(height)x(width)| Resize an image using both dimensions
+|(width)x(height)| Resize an image using both dimensions
 |h(height)| To scale an image based on height
 |w(width)| To scale an image based on width
