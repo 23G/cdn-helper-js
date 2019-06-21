@@ -31,7 +31,6 @@ import cdn from 'cdn-helper';
  * {String} path
  * {String} dimensions | (height)x(width), w(width), h(height)
  * {String} mode | crop is default, can be left empty
- *
  **/
 cdn('/yoda.jpeg', '200x200', 'crop');
 ```
