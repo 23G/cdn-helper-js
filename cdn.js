@@ -5,7 +5,7 @@ module.exports = (path, dimensions = null, mode = 'crop') => {
 
     if (!url || url == 'null') throw new Error('MIX_CDN_IMAGE_URL or CDN_IMAGE_URL not available in project environment');
 
-    path = path.replace(/^\//, '');
+    path = path.replace(url, '').replace(/^\//, '');
     url = url.replace(/\/$/, '') + '/';
 
     if (!dimensions) return url + path;

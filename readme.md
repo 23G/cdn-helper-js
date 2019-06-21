@@ -17,7 +17,7 @@ or
 `yarn install @23g/cdn-helper`
 
 
-After installing make sure in your environment CDN_CDN_IMAGE_URL or MIX_CDN_IMAGE_URL (with laravel mix projects) is set with the url to the CDN.
+After installing make sure in your environment CDN_IMAGE_URL or MIX_CDN_IMAGE_URL (with laravel mix projects) is set with the url to the CDN.
 
 ## Usage
 
@@ -27,15 +27,21 @@ Within our project you can use the cdn() helper function which accepts 3 paramet
 
 import cdn from 'cdn-helper';
 
+/**
+ * {String} path
+ * {String} dimensions | (height)x(width), w(width), h(height)
+ * {String} mode | crop is default, can be left empty
+ **/
 cdn('/yoda.jpeg', '200x200', 'crop');
 
-// resize options
-cdn('/yoda.jpeg', 'w200');
-cdn('/yoda.jpeg', 'h200');
-
 ```
-## Testing
 
-Run the tests with:
+### Resize options
 
-``npm test``
+The possibel resize options passed along in the "dimensions" param are as following:
+
+|Value|Action|
+|---|---|
+|(height)x(width)| Resize an image using both dimensions
+|h(height)| To scale an image based on height
+|w(width)| To scale an image based on width
