@@ -17,6 +17,10 @@ test('returns_url_with_dimensions', () => {
     expect(cdn('/yoda.jpeg', '200x200')).toBe(cdnImageUrl + '/size:200x200,mode:crop/yoda.jpeg');
 });
 
+test('removes_url_frompath', () => {
+    expect(cdn(cdnImageUrl + 'yoda.jpeg', '200x200')).toBe(cdnImageUrl + '/size:200x200,mode:crop/yoda.jpeg');
+});
+
 test('expects_error', () => {
     process.env.CDN_IMAGE_URL = null;
 
