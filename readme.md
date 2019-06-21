@@ -33,6 +33,7 @@ import cdn from 'cdn-helper';
  * {String} mode | crop is default, can be left empty
  **/
 cdn('/yoda.jpeg', '200x200', 'crop');
+
 ```
 
 ### Resize options
