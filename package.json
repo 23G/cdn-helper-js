@@ -4,8 +4,7 @@
   "description": "CDN Helper for internal usage",
   "main": "cdn.js",
   "scripts": {
-    "test": "./node_modules/jest/bin/jest.js",
-    "preversion": "npm test"
+    "test": "./node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
