@@ -1,6 +1,7 @@
-'use strict';
+export default function(path, dimensions, mode) {
+    dimensions = dimensions || null;
+    mode = mode || 'crop';
 
-module.exports = (path, dimensions = null, mode = 'crop') => {
     let url = process.env.MIX_CDN_IMAGE_URL || process.env.CDN_IMAGE_URL;
 
     if (!url || url == 'null') throw new Error('MIX_CDN_IMAGE_URL or CDN_IMAGE_URL not available in project environment');
@@ -10,5 +11,5 @@ module.exports = (path, dimensions = null, mode = 'crop') => {
 
     if (!dimensions) return url + path;
 
-    return `${url}size:${dimensions},mode:${mode}/${path}`;
+    return url + 'size:' + dimensions + ',mode:' + mode + '/' + path;
 };
