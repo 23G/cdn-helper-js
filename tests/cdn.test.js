@@ -1,6 +1,7 @@
 'use strict';
 
-const cdn = require('../cdn');
+import cdn from '../cdn';
+
 const cdnImageUrl = 'https://cdn.test.io';
 
 process.env.CDN_IMAGE_URL = cdnImageUrl;
