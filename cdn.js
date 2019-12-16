@@ -14,8 +14,8 @@ export default function (path, dimensions, quality, mode) {
 
     const values = [
         'size:' + dimensions,
-        'mode:' + mode,
         'quality:' + quality,
+        'mode:' + mode,
     ];
 
     return url + values.join(',') + '/' + path;
