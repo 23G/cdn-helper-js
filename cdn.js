@@ -1,6 +1,7 @@
-export default function(path, dimensions, mode) {
+export default function (path, dimensions, quality, mode) {
     dimensions = dimensions || null;
     mode = mode || 'crop';
+    quality = quality || 70;
 
     let url = process.env.MIX_CDN_IMAGE_URL || process.env.CDN_IMAGE_URL;
 
@@ -11,5 +12,11 @@ export default function(path, dimensions, mode) {
 
     if (!dimensions) return url + path;
 
-    return url + 'size:' + dimensions + ',mode:' + mode + '/' + path;
+    const values = [
+        'size:' + dimensions,
+        'mode:' + mode,
+        'quality:' + quality,
+    ];
+
+    return url + values.join(',') + '/' + path;
 };
