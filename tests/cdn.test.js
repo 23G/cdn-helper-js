@@ -11,15 +11,15 @@ test('returns_image_withouth_resizing', () => {
 });
 
 test('returns_url_with_dimensions', () => {
-    expect(cdn('/yoda.jpeg', 'h200')).toBe(cdnImageUrl + '/size:h200,mode:crop,quality:70/yoda.jpeg');
+    expect(cdn('/yoda.jpeg', 'h200')).toBe(cdnImageUrl + '/size:h200,quality:70,mode:crop/yoda.jpeg');
 });
 
 test('returns_url_with_dimensions', () => {
-    expect(cdn('/yoda.jpeg', '200x200')).toBe(cdnImageUrl + '/size:200x200,mode:crop,quality:70/yoda.jpeg');
+    expect(cdn('/yoda.jpeg', '200x200')).toBe(cdnImageUrl + '/size:200x200,quality:70,mode:crop/yoda.jpeg');
 });
 
 test('removes_url_frompath', () => {
-    expect(cdn(cdnImageUrl + 'yoda.jpeg', '200x200')).toBe(cdnImageUrl + '/size:200x200,mode:crop,quality:70/yoda.jpeg');
+    expect(cdn(cdnImageUrl + 'yoda.jpeg', '200x200')).toBe(cdnImageUrl + '/size:200x200,quality:70,mode:crop/yoda.jpeg');
 });
 
 test('expects_error', () => {
