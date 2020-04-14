@@ -1,6 +1,6 @@
 {
   "name": "@23g/cdn-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CDN Helper for internal usage",
   "main": "cdn.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/23G/cdn-helper-js#readme",
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "jest": "^24.9.0",
+    "jest": "^25.3.0",
     "minimist": ">=1.2.2"
   }
 }
