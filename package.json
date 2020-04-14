@@ -1,6 +1,6 @@
 {
   "name": "@23g/cdn-helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CDN Helper for internal usage",
   "main": "cdn.js",
   "scripts": {
