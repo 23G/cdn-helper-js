@@ -27,5 +27,5 @@ test('expects_error', () => {
 
     expect(() => {
         cdn('/yoda.jpeg', '200x200');
-    }).toThrow("MIX_CDN_IMAGE_URL or CDN_IMAGE_URL not available in project environment");
+    }).toThrow("MIX_CDN_IMAGE_URL, CDN_IMAGE_URL or window.Laravel.cdn_url not available in project environment");
 });
