@@ -4,7 +4,11 @@ export default function(path, dimensions, mode) {
 
     let url = process.env.MIX_CDN_IMAGE_URL || process.env.CDN_IMAGE_URL;
 
-    if (!url || url == 'null') throw new Error('MIX_CDN_IMAGE_URL or CDN_IMAGE_URL not available in project environment');
+    if (!url && typeof window.Laravel === 'object') {
+        url = window.Laravel.cdn_url;
+    }
+
+    if (!url || url == 'null') throw new Error('MIX_CDN_IMAGE_URL, CDN_IMAGE_URL or window.Laravel.cdn_url not available in project environment');
 
     path = path.replace(url, '').replace(/^\//, '');
     url = url.replace(/\/$/, '') + '/';
